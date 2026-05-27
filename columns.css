@@ -1,0 +1,58 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+:root{
+    --r:rgb(52, 0, 37);
+    --bg:lightgray;
+}
+.mycol
+{
+    width:1200px;
+    min-height: 300px;
+    max-height: fit-content;
+    border:1px solid var(--r);
+    text-align: justify;
+    padding:10px;
+    box-sizing: border-box;
+    columns:4;
+    column-gap: 25px;
+    column-rule: 2px dotted var(--r);
+    background-color: var(--bg);
+    /* box-shadow: 2px 5px 5px black; */
+    /* box-shadow:inset 0px 0px 40px black; */
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px 10px var(--r) , 0px 0px 5px 20px rgb(5, 247, 255),0px 0px 0px 30px tomato;
+}
+.mycol h2
+{
+    column-span: all;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 5px var(--r);
+}
+.mycol p::first-letter
+{
+    color:var(--r);
+    font-size: 80px;
+    font-family: arial;
+    float:left;
+    line-height: 60px;
+    margin-right:10px;
+}
+.mycol h2::first-line
+{
+    color:var(--r);
+}
+.mycol img
+{
+    width: 100%;
+}
+.mycol span
+{
+    color:var(--r);
+    font-style: italic;
+    letter-spacing: 2px;
+}
