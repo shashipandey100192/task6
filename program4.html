@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="cleartime" onclick="xyz()">
+    <script>
+
+
+        function abc() {
+            alert("weocme to javascript");
+            document.bgColor = "red";
+        }
+
+        var b = setTimeout("abc()", 5000000000);
+
+        function xyz() {
+            clearTimeout(b);
+            abc();
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
